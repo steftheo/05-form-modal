@@ -6,3 +6,55 @@
 @import 'variables';
 @import 'box-sizing';
 @import 'base';
+
+.modal-container {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  justify-content: center;
+
+  background: $background-haze;
+
+}
+
+.card {
+  display: flex;
+  max-width: 50rem;
+  margin: auto;
+  padding: 1rem;
+  background: $card-background;
+  box-shadow: $brand-shadow;
+}
+
+.card-title {
+  color: $card-text-color;
+  font-weight: bold;
+}
+
+.card-fields {
+  position: relative;
+  padding: 1rem;
+}
+
+.field-input {
+  display: flex;
+  min-width: $input-min-width;
+  border-bottom: $brand-border;
+  color: $card-text-color;
+  font-size: 18px;
+}
+
+
+.field-label {
+  color: $label-color;
+  font-size: 12px;
+}
+
+
+.card-actions {
+  display: flex;
+  align-items: flex-end;
+}
