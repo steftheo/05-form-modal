@@ -18,9 +18,7 @@
 }
 
 .card {
-  display: flex;
   max-width: 50rem;
-  margin: auto;
   padding: 1rem;
   background: $card-background;
   box-shadow: $brand-shadow;
@@ -32,13 +30,16 @@
 }
 
 .card-fields {
-  position: relative;
-  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: 0.5rem;
 }
 
 .field-input {
   display: flex;
   min-width: $input-min-width;
+  padding-top: 1rem;
   border-bottom: $brand-border;
   color: $card-text-color;
   font-size: 1.2rem;
@@ -46,6 +47,8 @@
 
 
 .field-label {
+  margin: auto;
+  padding-top: 0.5rem;
   color: $label-color;
   font-size: 12px;
 }
@@ -54,8 +57,19 @@
 .card-actions {
   display: flex;
   align-items: flex-end;
+  justify-content: flex-end;
+  padding-top: 0.5rem;
+  border-top: 1px $brand-primary solid;
+
 }
 
 .form-button {
+  padding-top: 0.5rem;
+  padding-right: 1rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
   border-radius: 0.2rem;
+  background: $brand-primary;
+  color: $card-background;
+  font-size: 12px;
 }
