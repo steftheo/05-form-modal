@@ -31,19 +31,22 @@
 }
 
 .item {
-  margin: auto;
+  flex-grow: 1;
+  margin: $gutter;
+  display: flex;
+  flex-direction: column;;
 }
 
 .card-fields {
   display: flex;
   flex-wrap: wrap;
-  margin-right: 10rem;
 }
 
 .field-input {
   display: flex;
+  flex-grow: 1;
   min-width: $input-min-width;
-  margin: auto;
+  border: 0;
   border-bottom: $brand-border;
   color: $card-text-color;
   font-size: 1.2rem;
@@ -51,8 +54,7 @@
 
 
 .field-label {
-  margin: auto;
-  padding: 1rem;
+  padding-top: 1rem;
   color: $brand-light-grey;
   font-size: 13px;
 }
