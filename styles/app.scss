@@ -3,4 +3,80 @@
 
 // $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 // @import 'font-awesome';
+@import 'variables';
 @import 'box-sizing';
+@import 'base';
+
+.modal-container {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  padding: $gutter;
+
+  background: $background-haze;
+
+}
+
+.card {
+  max-width: 50rem;
+  margin: auto;
+  padding: 1rem;
+  background: $card-background;
+  box-shadow: $brand-shadow;
+}
+
+.card-title {
+  color: black;
+  font-weight: bold;
+}
+
+.item {
+  flex-grow: 1;
+  margin: $gutter;
+  display: flex;
+  flex-direction: column;;
+}
+
+.card-fields {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.field-input {
+  display: flex;
+  flex-grow: 1;
+  min-width: $input-min-width;
+  border: 0;
+  border-bottom: $brand-border;
+  color: $card-text-color;
+  font-size: 1.2rem;
+}
+
+
+.field-label {
+  padding-top: 1rem;
+  color: $brand-light-grey;
+  font-size: 13px;
+}
+
+
+.card-actions {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin: 1rem;
+  padding: 0.5rem;
+  border-top: 1px $brand-primary solid;
+
+}
+
+.form-button {
+  padding-top: 0.5rem;
+  padding-right: 1rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  border-radius: 0.2rem;
+  background: $brand-primary;
+  color: $card-background;
+  font-size: 12px;
+}
